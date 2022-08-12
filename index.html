@@ -1,0 +1,62 @@
+<DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    
+      <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+      <!-- external fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+      <!-- local files -->
+      <link rel="stylesheet" type="text/css" href="public/css/style.css" >
+      <script defer src="./public/js/script.js" defer></script>
+    
+      <title>Frontend Mentor | Todo app</title>
+    </head>
+    <body class="dark">
+      <header></header>
+    
+      <main>
+        <div class="title">
+          <h1>Todo</h1>
+          <img class="theme-icon" src="./public/assets/icons/icon-sun.svg" alt="Icône du soleil">
+        </div>
+        
+        <div class="box">
+          <div class="circle"></div>
+          <input type="text" id="input" placeholder="Create a new todo...">
+        </div>
+    
+        <div class="todos__container">
+          <div class="todos"></div>
+    
+          <div class="todos__footer box">
+            <div class="items-count">
+                  <small><span id="todo-count">0</span> items left</small> 
+            </div>
+    
+            <!-- when the user clicks you can obtain the value by obtaining the sibling node of the label with an event listener attached to the label-->
+            <div class="todos__filter">
+              <input type="radio" id="all" name="filter" value="all" checked>
+              <label for="all">All</label> 
+    
+              <input type="radio" id="active" name="filter" value="active">
+              <label for="active">Active</label> 
+    
+              <input type="radio" id="completed" name="filter" value="completed">
+              <label for="completed">Completed</label> 
+            </div>
+    
+            <div>
+                <button class="btn" id="clear-button"><small>Clear Completed</small></button> 
+            </div>
+          </div>
+        </div>
+        <small class="footnote">Drag and drop to reorder list</small>
+      </main>
+    </body>
+    </html>
